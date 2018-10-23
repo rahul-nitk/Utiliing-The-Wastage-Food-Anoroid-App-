@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="LogOutMenu"
+
+        android:id="@+id/logoutMenu"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:titleCondensed="Logout"
+
+           />
+
+
+    <item android:title="Setting"
+
+        android:id="@+id/Setting"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:titleCondensed="Setting"
+
+        />
+
+    <item android:title="Profile"
+
+        android:id="@+id/Profile"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:titleCondensed="Profile"
+
+        />
+
+
+
+
+</menu>
+
+
+
