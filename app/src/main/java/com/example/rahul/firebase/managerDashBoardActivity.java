@@ -28,6 +28,8 @@ public class managerDashBoardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_manager_dash_board);
       auth=FirebaseAuth.getInstance();
     newInform=findViewById(R.id.btInform);
+        Intent i=getIntent();
+        newInform.setText(i.getStringExtra("type"));
 
     newInform.setOnClickListener(new View.OnClickListener() {
         @Override
