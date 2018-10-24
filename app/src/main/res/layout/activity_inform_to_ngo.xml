@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/btn_login"
     tools:context=".InformToNgoActivity">
 
     <EditText
@@ -14,6 +15,7 @@
         android:ems="10"
         android:hint="ForHowManyPeople(Approx)"
         android:inputType="textPersonName|number"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,6 +31,7 @@
         android:ems="10"
         android:hint="Address"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/etFoodType"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"
@@ -44,6 +47,7 @@
         android:ems="10"
         android:hint="Last Time To Take Food"
         android:inputType="time"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/etManagerAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
@@ -53,10 +57,15 @@
 
     <Button
         android:id="@+id/btMangerSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/btn_logut_bg"
         android:text="Submit"
+        android:textColor="@color/btn_login"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -65,10 +74,11 @@
         android:id="@+id/etFoodType"
         android:layout_width="294dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
-        android:hint="Specify in Formate(veg/NonVeg)"
+        android:hint="Specify Type(veg/NonVeg)"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btMangerSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.455"

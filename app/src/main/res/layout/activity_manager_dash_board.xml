@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/btn_login"
     tools:context=".managerDashBoardActivity">
 
     <TextView
         android:id="@+id/tvWelcomeManager"
-        android:layout_width="266dp"
-        android:layout_height="75dp"
+        android:layout_width="335dp"
+        android:layout_height="51dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Welcome Manager"
+        android:background="@color/input_register_hint"
+        android:text="Welcome Manager !"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/btn_login"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btInform"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.661"
@@ -25,13 +31,17 @@
 
     <Button
         android:id="@+id/btInform"
-        android:layout_width="134dp"
-        android:layout_height="68dp"
+        android:layout_width="184dp"
+        android:layout_height="72dp"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="252dp"
+        android:layout_marginBottom="248dp"
+        android:background="@color/btn_logut_bg"
         android:text="Inform To NGO"
+        android:textColor="@color/btn_login"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
