@@ -48,7 +48,15 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".viewFoodDetailActivity" />
         <activity android:name=".foodQueryActivity" />
+<<<<<<< HEAD
         <activity android:name=".LoginActivity" />
+=======
+        <activity android:name=".LoginActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+>>>>>>> 60c33bbd3d6f90641fdcf6b730fee4fce3c84652
     </application>
 
 </manifest>

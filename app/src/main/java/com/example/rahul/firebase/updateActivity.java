@@ -45,7 +45,7 @@ public class updateActivity extends AppCompatActivity {
         db=FirebaseDatabase.getInstance();
         storage=FirebaseStorage.getInstance();
         sr=storage.getReference();
-        final DatabaseReference ref=db.getReference(auth.getUid());
+        final DatabaseReference ref=db.getReference("mangers").child(auth.getUid());
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

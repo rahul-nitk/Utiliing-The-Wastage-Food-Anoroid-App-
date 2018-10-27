@@ -40,7 +40,7 @@ public class profileActivity extends AppCompatActivity {
 
         auth=FirebaseAuth.getInstance();
         db=FirebaseDatabase.getInstance();
-        DatabaseReference ref=db.getReference(auth.getUid());
+        DatabaseReference ref=db.getReference("mangers").child(auth.getUid());
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

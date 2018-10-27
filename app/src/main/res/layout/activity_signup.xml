@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.firebaseloginapp.AccountActivity.SignupActivity">
+    tools:context=".SignupActivity">
 
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/btn_login"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin"
@@ -83,9 +83,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
+            android:background="@color/btn_logut_bg"
             android:text="@string/action_sign_in_short"
-            android:textColor="@android:color/black"
+            android:textColor="@color/btn_login"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <Button
