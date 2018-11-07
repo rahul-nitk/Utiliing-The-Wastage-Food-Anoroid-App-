@@ -4,18 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/btn_login"
     tools:context=".consumerDashboardActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="248dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="284dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/input_register_hint"
+        android:fontFamily="@font/allerta_stencil"
         android:text="Welcome Consumer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:textSize="36sp" />
 
     <Button
         android:id="@+id/btConsumerCurrentAddress"
@@ -24,26 +29,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
-        android:text="Current Address"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/btConsumerUpdateAddress"
-        android:layout_width="218dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="172dp"
-        android:text="update Address"
+        android:layout_marginBottom="8dp"
+        android:background="@color/btn_logut_bg"
+        android:text="Update Address"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btConsumerCurrentAddress"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.103" />
 
 </android.support.constraint.ConstraintLayout>

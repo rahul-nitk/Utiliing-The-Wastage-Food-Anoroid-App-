@@ -4,7 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+<!--<<<<<<< HEAD-->
     <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+<!--=======-->
+    <!--  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+<!--&gt;>>>>>> 4ec41418b19b6e66fe5b256cffc5a187f6310ea6-->
     <!--
     <application
         android:allowBackup="true"
@@ -37,6 +41,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+        .
         <activity android:name=".SignupActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".profileActivity" />
@@ -47,17 +52,28 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".viewFoodDetailActivity" />
         <activity android:name=".foodQueryActivity" />
+<!--<<<<<<< HEAD-->
         <activity android:name=".LoginActivity" />
+=<!--======
+<<<<<<< HEAD-->
+        <!--<activity android:name=".LoginActivity" />
+&lt;!&ndash;=======&ndash;&gt;
+        <activity android:name=".LoginActivity"></activity>-->
+<!--&gt;>>>>>> 4ec41418b19b6e66fe5b256cffc5a187f6310ea6-->
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+<!--<<<<<<< HEAD-->
 
         <activity android:name=".consumerRegistrationActivity" />
         <activity android:name=".consumerDashboardActivity" />
         <activity android:name=".adminViewConsumerListActivity" />
         <activity android:name=".consumerInfoActivity" />
         <activity android:name=".consumerAddressDetailActivity"></activity>
+<!--=======
+>>>>>>> 60c33bbd3d6f90641fdcf6b730fee4fce3c84652
+>>>>>>> 4ec41418b19b6e66fe5b256cffc5a187f6310ea6-->
     </application>
 
 </manifest>

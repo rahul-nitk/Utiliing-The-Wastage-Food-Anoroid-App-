@@ -18,9 +18,10 @@ public class consumerDashboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consumer_dashboard);
+        auth=FirebaseAuth.getInstance();
 
     currentAddress=findViewById(R.id.btConsumerCurrentAddress);
-    updateAddress=findViewById(R.id.btConsumerUpdateAddress);
+    //updateAddress=findViewById(R.id.btConsumerUpdateAddress);
 
 
 
@@ -32,8 +33,6 @@ public class consumerDashboardActivity extends AppCompatActivity {
 
         }
     });
-
-
 
     }
 

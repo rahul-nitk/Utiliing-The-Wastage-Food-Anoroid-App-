@@ -34,11 +34,12 @@ public class adminViewConsumerListActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 LinearLayout root = findViewById(R.id.loConsumerList);
                 LinearLayout layout;
+                int  i=1;
                 //  final //=new LinearLayout(viewFoodDetailActivity.this);
                 for ( final DataSnapshot p : dataSnapshot.getChildren()) {
                     layout = new LinearLayout(adminViewConsumerListActivity.this);
 
-                    String name1= p.getValue(consumerProfile.class).consumerEmail;
+                    //String name1= p.getValue(consumerProfile.class).consumerName;
                    // String name=p.getValue(foodDetail.class).email;
                     //userProfile profile = dataSnapshot.getValue(userProfile.class);
 
@@ -47,7 +48,8 @@ public class adminViewConsumerListActivity extends AppCompatActivity {
                     TextView tv = new TextView(adminViewConsumerListActivity.this);
                     //  tv.setWidth(200);
 
-                    tv.setText(name1);
+                    tv.setText("Consumer"+" "+i);
+                    i++;
                     // tv.setText(d);
                     tv.setOnClickListener(new View.OnClickListener() {
                         @Override
