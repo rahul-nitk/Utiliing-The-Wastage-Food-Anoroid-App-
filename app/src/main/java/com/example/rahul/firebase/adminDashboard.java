@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class adminDashboard extends AppCompatActivity {
 
     private FirebaseAuth auth;
-     public Button inform;
+     public Button inform,getConsumerList;
 
 
     public void signOut()
@@ -42,6 +42,7 @@ public class adminDashboard extends AppCompatActivity {
         auth=FirebaseAuth.getInstance();
 
         inform=(Button) findViewById(R.id.btFoodInfo);
+        getConsumerList=findViewById(R.id.btConsumerInfo);
         inform.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +50,12 @@ public class adminDashboard extends AppCompatActivity {
             }
         });
 
-
+        getConsumerList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(adminDashboard.this,adminViewConsumerListActivity.class));
+            }
+        });
 
 
     }

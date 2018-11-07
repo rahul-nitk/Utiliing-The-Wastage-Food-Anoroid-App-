@@ -20,12 +20,12 @@ import com.google.firebase.storage.StorageReference;
 
 public class updateActivity extends AppCompatActivity {
 
-    EditText updateName,updateAge,updateEmail;
+    EditText updateName,updateAge,updateEmail,updateMobile;
     Button updateButton;
 
     FirebaseAuth auth;
     FirebaseDatabase db;
-    String newName,newAge,newEmail,newType;
+    String newName,newAge,newEmail,newType,newMobile;
     StorageReference sr;
     Uri imagepath;
     FirebaseStorage storage;
@@ -38,6 +38,7 @@ public class updateActivity extends AppCompatActivity {
         updateName=findViewById(R.id.etUpdateName);
         updateEmail=findViewById(R.id.etupdateEmail);
         updateAge=findViewById(R.id.etUpdateAge);
+        updateMobile=findViewById(R.id.etUpdateMobile);
     //    userprofilePic=findViewById(R.id.profilePic);
         updateButton=(Button) findViewById(R.id.btProfileUpdate);
 
@@ -53,6 +54,7 @@ public class updateActivity extends AppCompatActivity {
                 updateName.setText(/*profilename.toString().trim()+*/"Name:"+profile.getName());
                 updateEmail.setText(/*profileEmail.toString().trim()+*/"Email:"+profile.getEmail());
                 updateAge.setText(/*profileAge.toString().trim()+*/"Age:"+profile.getAge());
+                updateMobile.setText("Mobile No:"+profile.getuserMobile());
             }
 
             @Override
@@ -74,8 +76,9 @@ public class updateActivity extends AppCompatActivity {
                 newName=updateName.getText().toString().trim();
                 newAge=updateAge.getText().toString().trim();
                 newEmail=updateEmail.getText().toString().trim();
+                newMobile=updateMobile.getText().toString().trim();
 
-                userProfile profile=new userProfile(newName,newEmail,newAge,"Ram");
+                userProfile profile=new userProfile(newName,newEmail,newAge,"Ram",newMobile);
                 ref.setValue(profile);
 
                 finish();

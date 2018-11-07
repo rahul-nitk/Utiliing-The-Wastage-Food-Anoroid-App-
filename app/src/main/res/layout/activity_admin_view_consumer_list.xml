@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewFoodDetailActivity">
+    tools:context=".adminViewConsumerListActivity">
 
     <LinearLayout
-        android:id="@+id/loFoodDetail"
+        android:id="@+id/loConsumerList"
         android:layout_width="368dp"
         android:layout_height="495dp"
         android:orientation="vertical"

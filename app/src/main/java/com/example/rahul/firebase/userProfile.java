@@ -6,6 +6,8 @@ public class userProfile {
     public  String email;
     public String age;
     public String type;
+    public String Mobile;
+
 
     public String getType() {
         return type;
@@ -19,11 +21,21 @@ public class userProfile {
 {
 
 }
-    public userProfile(String name, String email, String age,String type) {
+    public userProfile(String name, String email, String age,String type,String mobile) {
         this.name = name;
         this.email = email;
         this.age = age;
         this.type=type;
+        Mobile=mobile;
+    }
+
+
+    public String getuserMobile() {
+        return Mobile;
+    }
+
+    public void setuserMobile(String mobile) {
+        Mobile = mobile;
     }
 
     public String getName() {

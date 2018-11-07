@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".consumerRegistrationActivity">
 
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_marginBottom="8dp"
         android:background="@color/btn_login"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
 
@@ -31,11 +33,11 @@
 
 
         <EditText
-            android:id="@+id/etName"
+            android:id="@+id/etConsumerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
-            android:hint="Name"
+            android:hint="Name1"
             android:imeActionId="@+id/login"
             android:imeOptions="actionUnspecified"
             android:inputType="text|textPassword"
@@ -43,7 +45,7 @@
             android:textColor="@android:color/white" />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/etConsumeremail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
@@ -66,23 +68,35 @@
 
 
         <EditText
-            android:id="@+id/etAge"
+            android:id="@+id/etConsumerMobile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
-            android:hint="Age"
+            android:hint="MobileNo"
             android:imeActionId="@+id/login"
             android:imeOptions="actionUnspecified"
-            android:inputType="text|textPassword"
+            android:inputType="text"
             android:maxLines="1"
             android:textColor="@android:color/white" />
 
         <EditText
-            android:id="@+id/etMobile"
+            android:id="@+id/etConsumerAddress2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
-            android:hint="Mobile No"
+            android:hint="Address"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/etConsumerAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Age"
             android:imeActionId="@+id/login"
             android:imeOptions="actionUnspecified"
             android:inputType="text|textPassword"

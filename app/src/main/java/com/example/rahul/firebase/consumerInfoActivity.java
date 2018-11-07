@@ -12,9 +12,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-public class foodQueryActivity extends AppCompatActivity {
+public class consumerInfoActivity extends AppCompatActivity {
 
-    TextView newlastTIme,newhowMuch,newAddress,newtype;
+    TextView newEmail,newName,newAddress,newAge;
     Button newCollected;
 
     FirebaseAuth auth;
@@ -22,56 +22,26 @@ public class foodQueryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_query);
+        setContentView(R.layout.activity_consumer_info);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        newlastTIme=findViewById(R.id.tvLastTIme);
-        newhowMuch=findViewById(R.id.tvHowMany);
-        newAddress=findViewById(R.id.tvAddress);
-        newtype=findViewById(R.id.tvType);
+        newEmail=findViewById(R.id.tvConsumerEmail);
+        newName=findViewById(R.id.tvCOnsumerName);
+        newAddress=findViewById(R.id.tvConsumerAddress);
+        newAge=findViewById(R.id.tvconsumerAge);
         newCollected=findViewById(R.id.btCollected);
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
         auth=FirebaseAuth.getInstance();
         db=FirebaseDatabase.getInstance();
-        DatabaseReference ref=db.getReference("Food Detail").child(key);
+        DatabaseReference ref=db.getReference("consumers").child(key);
         ref.addValueEventListener(new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            foodDetail detail=dataSnapshot.getValue(foodDetail.class);
-            newlastTIme.setText(newlastTIme.getText()+" "+detail.getfoodTime());
-            newhowMuch.setText(newhowMuch.getText()+" "+detail.getNoOfPeople());
-            newAddress.setText(newAddress.getText()+" "+detail.getfoodAddress());
-            newtype.setText(newtype.getText()+" "+detail.getfoodType());
-
-
-        }
-
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-
-        }
-    });
-
-        //newlastTIme.setText(key);
-
-
-newCollected.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-
-
-        Intent intent=getIntent();
-        String key=intent.getStringExtra("key");
-
-        DatabaseReference ref1=db.getReference("Food Detail").child(key);
-
-        ref1.removeValue();
-
-       /* ref1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                foodDetail detail=dataSnapshot.getValue(foodDetail.class);
-                detail.
+                consumerProfile detail=dataSnapshot.getValue(consumerProfile.class);
+                newEmail.setText(newEmail.getText()+" "+detail.getConsumerEmail());
+                newName.setText(newName.getText()+" "+detail.getConsumerName());
+                newAddress.setText(newAddress.getText()+" "+detail.getConsumerAddress());
+                newAge.setText(newAge.getText()+" "+detail.getConsumerAge());
 
 
             }
@@ -80,15 +50,12 @@ newCollected.setOnClickListener(new View.OnClickListener() {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });*/
+        });
+
+        //newlastTIme.setText(key);
 
 
 
-        finish();
-
-
-    }
-});
 
     }
 

@@ -46,11 +46,23 @@
         app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/etUpdateMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/btProfileUpdate"
         android:layout_width="142dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="64dp"
         android:background="@color/btn_logut_bg"
         android:text="Update"
         android:textColor="@color/btn_login"
@@ -58,6 +70,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
