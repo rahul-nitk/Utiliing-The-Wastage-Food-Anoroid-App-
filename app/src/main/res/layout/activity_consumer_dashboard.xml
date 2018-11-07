@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/btn_login"
+    android:background="@drawable/eee"
     tools:context=".consumerDashboardActivity">
 
     <TextView
@@ -12,9 +12,12 @@
         android:layout_width="284dp"
         android:layout_height="72dp"
         android:layout_marginTop="28dp"
-        android:background="@color/input_register_hint"
+        android:background="@android:color/black"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
         android:fontFamily="@font/allerta_stencil"
         android:text="Welcome Consumer"
+        android:textColor="@color/btn_login"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"

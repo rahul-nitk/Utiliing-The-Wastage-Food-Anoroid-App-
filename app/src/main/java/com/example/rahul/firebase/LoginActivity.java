@@ -142,8 +142,9 @@ public class LoginActivity extends AppCompatActivity {
                                 // If sign in fails, display a message to the user. If sign in succeeds
                                 // the auth state listener will be notified and logic to handle the
                                 // signed in user can be handled in the listener.
-                                progressBar.setVisibility(View.GONE);
+
                                 if (!task.isSuccessful()) {
+                                    progressBar.setVisibility(View.GONE);
                                     // there was an error
                                     if (password.length() < 6) {
                                         inputPassword.setError(getString(R.string.minimum_password));
@@ -154,6 +155,7 @@ public class LoginActivity extends AppCompatActivity {
                                 } else {
                                     checkEmailVarification();
                                 }
+
                             }
                         });
             }
@@ -186,6 +188,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                     if(type.equals("admin")){
+                        progressBar.setVisibility(View.GONE);
                         startActivity((new Intent(LoginActivity.this,adminDashboard.class)));
                         finish();
                     }
@@ -193,13 +196,14 @@ public class LoginActivity extends AppCompatActivity {
                     {
                         if(type.equals("manager"))
                         {
+                            progressBar.setVisibility(View.GONE);
 
                             startActivity((new Intent(LoginActivity.this,managerDashBoardActivity.class)));
                             finish();
                         }
 
                         else
-                        {
+                        {  progressBar.setVisibility(View.GONE);
                             startActivity((new Intent(LoginActivity.this,consumerDashboardActivity.class)));
                             finish();
                         }

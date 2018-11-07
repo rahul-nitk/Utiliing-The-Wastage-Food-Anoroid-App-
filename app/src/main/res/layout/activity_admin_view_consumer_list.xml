@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".adminViewConsumerListActivity"
-    android:background="@color/btn_login"
+    android:background="@drawable/eee"
     >
 
     <LinearLayout
@@ -28,7 +28,7 @@
         android:layout_marginBottom="8dp"
 
 
-        android:background="@color/input_register_hint"
+        android:background="@color/btn_logut_bg"
         android:fontFamily="@font/allerta_stencil"
         android:text="Consumers List"
         app:layout_constraintBottom_toTopOf="@+id/loConsumerList"

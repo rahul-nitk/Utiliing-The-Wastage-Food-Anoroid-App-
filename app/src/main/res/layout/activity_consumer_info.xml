@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/btn_login"
+    android:background="@drawable/eee"
     tools:context=".consumerInfoActivity">
 
     <TextView
@@ -80,7 +80,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="62dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/input_register_hint"
+        android:background="@color/btn_logut_bg"
         android:fontFamily="@font/allerta_stencil"
         android:text="Consumer Info"
         android:textAlignment="center"
