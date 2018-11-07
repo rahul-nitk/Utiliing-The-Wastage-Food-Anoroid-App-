@@ -171,28 +171,36 @@ public class LoginActivity extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     userProfile profile=dataSnapshot.getValue(userProfile.class);
 
+
+
+
                     String type=profile.getType();
                     //       Log.d(Tag,LoginActivity.type);
+
+                    if(type ==null)
+                    {
+                        consumerProfile profile1=dataSnapshot.getValue(consumerProfile.class);
+                        type=profile1.getConsumerType();
+
+                    }
 
 
                     if(type.equals("admin")){
                         startActivity((new Intent(LoginActivity.this,adminDashboard.class)));
                         finish();
-
-                }
-
-                else
+                    }
+                    else
                     {
-                        if(type.equals("volunteer"))
+                        if(type.equals("manager"))
                         {
 
-
+                            startActivity((new Intent(LoginActivity.this,managerDashBoardActivity.class)));
+                            finish();
                         }
 
                         else
                         {
-
-                            startActivity((new Intent(LoginActivity.this,managerDashBoardActivity.class)));
+                            startActivity((new Intent(LoginActivity.this,consumerDashboardActivity.class)));
                             finish();
                         }
                     }

@@ -24,28 +24,27 @@
     <EditText
         android:id="@+id/etManagerAddress"
         android:layout_width="292dp"
-        android:layout_height="102dp"
+        android:layout_height="86dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="Address"
         android:inputType="textPersonName"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etFoodType"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="198dp" />
 
     <EditText
         android:id="@+id/timeLast"
         android:layout_width="286dp"
-        android:layout_height="102dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Last Time To Take Food"
+        android:hint="Last Time To Take Food(HH:MM Am/pm)"
         android:inputType="time"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/etManagerAddress"
@@ -53,7 +52,7 @@
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNoOfPeople"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btMangerSubmit"
@@ -74,14 +73,17 @@
         android:id="@+id/etFoodType"
         android:layout_width="294dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="72dp"
         android:ems="10"
         android:hint="Specify Type(veg/NonVeg)"
         android:inputType="textPersonName"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btMangerSubmit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etManagerAddress"
+        app:layout_constraintVertical_bias="0.187" />
 
 </android.support.constraint.ConstraintLayout>
