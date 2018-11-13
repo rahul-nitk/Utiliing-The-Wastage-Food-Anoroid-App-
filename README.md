@@ -1,2 +1,3 @@
 # Utiliing-The-Wastage-Food-Anoroid-App-
-This App will help to NGO or other who want to help the needy people by collecting the food from various location
+
+[For Read me click here](https://github.com/user/repo/blob/branch/other_file.md)
